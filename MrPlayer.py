@@ -158,7 +158,7 @@ class helpWindow(object):
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.setFixedSize(QSize(410,620))
+        MainWindow.setFixedSize(QSize(410,630))
         MainWindow.setStyleSheet("background-color:black;color:#9464B9")
         MainWindow.setWindowFlags(Qt.FramelessWindowHint)
         
@@ -169,11 +169,14 @@ class Ui_MainWindow(object):
         MainWindow.addToolBar(self.toolbar)
         self.icon = QLabel()
         self.icon.setPixmap(QPixmap('icon.png').scaled(25,25))
-        self.texticon = QLabel('                           MrPlayer              ')
+        self.texticon = QLabel('MrPlayer')
         self.texticon.setFont(QFont('Arial',14))
         self.texticon.setStyleSheet('color:gray')
         self.toolbar.addWidget(self.icon)
         self.toolbar.addWidget(self.texticon)
+        self.spacer = QWidget()
+        self.spacer.setSizePolicy(QSizePolicy.Expanding, QSizePolicy.Expanding)
+        self.toolbar.addWidget(self.spacer)
         self.toolbar.setStyleSheet('background-color:#21252B ; border-top: 0px solid black')
         self.closeAction = QAction()
         self.closeAction.setIcon(QIcon('assets/close.png'))
