@@ -1,37 +1,26 @@
-## Welcome to GitHub Pages
 
-You can use the [editor on GitHub](https://github.com/AkshatChauhan18/MrPlayer.github.io/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+![GIF](overview/mrplayergif.gif "GIF")
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+---
+**MrPlayer** is a _MP3_ player made on 100% **Python**, it is for <mark>**Windows**</mark> .
 
-### Markdown
+Made by AkshatChauhan18
+## Features of MrPlayer
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+**MrPlayer has all features -**
 
-```markdown
-Syntax highlighted code block
+1. Play
+2. Pause
+3. Next
+4. Previous
+5. Help Button
+6. Total duration and current duration
+7. Duration slider
+8. Volume slider
 
-# Header 1
-## Header 2
-### Header 3
+## How to use MrPlayer
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Theme
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/AkshatChauhan18/MrPlayer.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+When you will first time start MrPlayer it show nothing in the song box ,
+to add songs close MrPlayer and go to your <mark>***Music***</mark> folder
+and there will be a folder already created of name MrPlayer-songs , add songs
+to the MrPlayer folder and rerun the app . Enjoy using MrPlayer. 
