@@ -1,10 +1,11 @@
 
-![GIF](mrplayergif.gif "GIF")
 
----
+
 **MrPlayer** is a _MP3_ player made on 100% **Python**, it is for **Windows** .
 
 Made by AkshatChauhan18
+---
+![GIF](mrplayergif.gif "GIF")
 ## Features of MrPlayer
 
 **MrPlayer has all features -**
