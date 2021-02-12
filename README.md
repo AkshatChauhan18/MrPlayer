@@ -1,4 +1,4 @@
-# MrPlayer 🎶
+# MrPlayer 🎶🎧
 
 ![GIF](overview/mrplayergif.gif "GIF")
 
