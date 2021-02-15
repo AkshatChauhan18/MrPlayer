@@ -20,7 +20,7 @@ Made by AkshatChauhan18
 
 ---
 # Download & Installation
-1. Click on the Download button or click on the link - [releaases](https://www.github.com/AkshatChauhan18/Mrplayer/releases),you will be redirected to the release page.
+1. Click on the **Download** button or click on the link - [releases](https://www.github.com/AkshatChauhan18/Mrplayer/releases), you will be redirected to the release page.
 2.Click on the latest release
 3.Download the installer and run it , MrPLayer will be installed 
 
