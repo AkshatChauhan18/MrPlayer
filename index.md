@@ -27,7 +27,7 @@ Made by AkshatChauhan18
 ---
 ## How to use MrPlayer
 
-When you will first time start MrPlayer it show nothing in the song box ,
+When you will first time start MrPlayer it will show nothing in the song box ,
 to add songs close MrPlayer and go to your ***Music*** folder
 and there will be a folder already created of name MrPlayer-songs , add songs
 to the MrPlayer folder and rerun the app . Enjoy using MrPlayer. 
