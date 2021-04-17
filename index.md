@@ -2,9 +2,10 @@
 
 **MrPlayer** is a _MP3_ player made on 100% **Python**, it is for **Windows** .
 
-Made by AkshatChauhan18
+An apealing MP3 player
 ---
-![GIF](mrplayergif.gif "GIF")
+<video width="420" height="540"><source src="main.mp4" type="video/mp4"></video>
+
 ## Features of MrPlayer
 
 **MrPlayer has all features -**
