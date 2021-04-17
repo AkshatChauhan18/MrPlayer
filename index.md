@@ -6,7 +6,7 @@ An apealing MP3 player
 ---
 <video controls autoplay muted width="540" height="572" ><source src="main.mp4" type="video/mp4"></video>
 
-## Features of MrPlayer
+# Features of MrPlayer
 
 **MrPlayer has all features -**
 
@@ -14,7 +14,7 @@ An apealing MP3 player
 2. Pause
 3. Next
 4. Previous
-5. Help Buttonc
+5. Help Button
 6. Total duration and current duration
 7. Duration slider
 8. Volume slider
