@@ -19,7 +19,7 @@ An apealing MP3 player
 7. Duration slider
 8. Volume slider
 
-# A speacial feature
+# A special feature
 
 MrPlayer is with Lyrics which is extracted from [Genius.com](https://Genius.com) using lyricsgenius python library.
 
