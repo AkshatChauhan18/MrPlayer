@@ -4,7 +4,7 @@
 
 An apealing MP3 player
 ---
-<video width="540" height="572" ><source src="main.mp4" type="video/mp4"></video>
+<video controls autoplay muted width="540" height="572" ><source src="main.mp4" type="video/mp4"></video>
 
 ## Features of MrPlayer
 
