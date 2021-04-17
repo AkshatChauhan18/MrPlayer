@@ -25,7 +25,7 @@ Made by AkshatChauhan18
 3. Download the installer and run it , MrPLayer will be installed 
 
 ---
-## How to use MrPlayer
+# How to use MrPlayer
 
 When you will first time start MrPlayer it will show nothing in the song box ,
 to add songs close MrPlayer and go to your ***Music*** folder
