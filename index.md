@@ -4,7 +4,7 @@
 
 An apealing MP3 player
 ---
-<video width="420" height="540"><source src="main.mp4" type="video/mp4"></video>
+<iframe width="420" height="540"><source src="main.mp4" type="video/mp4"></iframe>
 
 ## Features of MrPlayer
 
