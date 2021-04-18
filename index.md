@@ -29,6 +29,11 @@ Lyrics fetching time may vary according to your internet speed.
 
 # MrPlayer-CLI
 
+Suggested using windows terminal becuse it suports
+many languages when extracting lyrics.
+
+Terminal theme 'is One Half Dark'
+
 <video controls autoplay width="640" height="360" ><source src="CLI.mp4" type="video/mp4"></video>
 
 For playing song cd to directory where the song is and type this command -
@@ -71,7 +76,6 @@ to the MrPlayer folder and rerun the app . Enjoy using MrPlayer.
 You need to create a account in [Genius.com](https://Genius.com) then go to [Genius Dev](https://Genius.com/developers)
 then click 'Create an API client' ,then enter the client name you want to create ,
 you will need to enter a website name in order to create an api client. Then click
-save. Then click 'generate access token', it will create an access token , then 
-copy the access token. For both MrPlayer and MrPlayer-CLI you need to paste that 
-access token to 'C:\\Users\\Your User Name\\.MrPlayer\\api_key.txt'.  
-
+save. Then click 'generate access token', it will create an access token , then
+copy the access token. For both MrPlayer and MrPlayer-CLI you need to paste that
+access token to 'C:\\Users\\Your User Name\\.MrPlayer\\api_key.txt'.
