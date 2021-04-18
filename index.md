@@ -22,7 +22,9 @@ An apealing MP3 player
 # A special feature
 
 MrPlayer is with Lyrics which is extracted from [Genius.com](https://Genius.com) using lyricsgenius python library.
+
 ![GIF](lyrics.gif)
+
 Lyrics fetching time may vary according to your internet speed.
 
 ---
