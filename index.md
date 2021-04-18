@@ -73,5 +73,5 @@ then click 'Create an API client' ,then enter the client name you want to create
 you will need to enter a website name in order to create an api client. Then click
 save. Then click 'generate access token', it will create an access token , then 
 copy the access token. For both MrPlayer and MrPlayer-CLI you need to paste that 
-access token to 'C:/Users/Your User Name/.MrPlayer/api_key.txt'.  
+access token to 'C:\\Users\\Your User Name\\.MrPlayer\\api_key.txt'.  
 
