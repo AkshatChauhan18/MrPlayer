@@ -1,0 +1,4 @@
+Thankyou for downloading MrPlayer.
+For any query start discussion in github repo.
+For any bug report raise issue in github repo.
+This is a special file.
