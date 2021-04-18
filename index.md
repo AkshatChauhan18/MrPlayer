@@ -28,6 +28,10 @@ MrPlayer is with Lyrics which is extracted from [Genius.com](https://Genius.com)
 Lyrics fetching time may vary according to your internet speed.
 
 ---
+# MrPlayer-CLI
+
+<video controls autoplay width="640" height="360" ><source src="CLI.mp4" type="video/mp4"></video>
+
 # Download & Installation
 1. Click on the **_Download_** button or click on the link - [releases](https://www.github.com/AkshatChauhan18/Mrplayer/releases), you will be redirected to the release page.
 2. Click on the latest release
