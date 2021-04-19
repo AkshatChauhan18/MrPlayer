@@ -48,7 +48,7 @@ For getting lyrics type this command -
 mpc -gl "song name" -si "singer name"
 ```
 
-For knowing the source code MrPlayer-CLI type this command -
+For knowing the source code of MrPlayer-CLI type this command -
 
 ```powershell
 mpc -sc
