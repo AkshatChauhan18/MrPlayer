@@ -12,15 +12,10 @@
   font-weight: 700;
   letter-spacing: 8px;
   margin-bottom: 20px;
-  background: black;
+  background: rgba(0, 0, 0, 0);
   position: relative;
   animation: text 3s 1;
 }
-.text2{
-  font-size: 30px;
-  color: #6ab04c;
-}
-
 @keyframes text {
   0%{
     color: black;
