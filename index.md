@@ -1,4 +1,4 @@
-**MrPlayer** is a _MP3_ player made on 100% **Python**, it is for **Windows** .
+**MrPlayer** is an _MP3_ player made on 100% **Python**, it is for **Windows** .
 
 ## An apealing MP3 player
 
