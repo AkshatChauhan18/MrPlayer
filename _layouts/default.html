@@ -28,11 +28,10 @@
     <header class="page-header" role="banner">
       <img src="icon.png">
       <div class="container">
-        <span class="text1">MrPlayer</span>
-        <span class="text2">{{ page.description | default: site.description | default: site.github.project_tagline }}</span>
+        <span><h1 class="text1">MrPlayer</h1></span>
       </div>      
       <!--<h1 class="project-name">{{default: site.title | default: site.github.repository_name }}</h1>-->
-      <!--<h2 class="project-tagline"></h2>-->
+      <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
       {% if site.github.is_project_page %}
         <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>
       {% endif %}
