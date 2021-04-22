@@ -2,7 +2,7 @@
 <html lang="{{ site.lang | default: "en-US" }}">
 
   <head>
-
+    
     {% if site.google_analytics %}
       <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
       <script>
@@ -26,6 +26,10 @@
    
 
     <header class="page-header" role="banner">
+      <div class="container">
+        <span class="text1">MrPlayer</span>
+        <span class="text2">Darkcode</span>
+      </div>      
       <img src="icon.png">
       <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
       <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
