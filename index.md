@@ -1,6 +1,6 @@
 **MrPlayer** is an _MP3_ player made on 100% **Python**, it is for **Windows** .
 
-## An apealing MP3 player
+## An appealing MP3 player
 
 <video controls autoplay muted width="540" height="572" ><source src="main.mp4" type="video/mp4"></video>
 
