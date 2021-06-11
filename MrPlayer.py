@@ -4,7 +4,7 @@
 #################################################################
 
 from PySide2 import QtCore, QtGui, QtWidgets, QtMultimedia
-from PySide2.QtWidgets import QLabel, QPushButton, QToolBar, QWidget, QSlider, QSizePolicy, QAction
+from PySide2.QtWidgets import QLabel, QPushButton, QToolBar, QWidget, QSlider, QSizePolicy, QAction,QStatusBar
 from PySide2.QtCore import Qt, QSize, QRect, QUrl, QPoint
 from PySide2.QtGui import Qt, QFont, QPixmap, QIcon, QMovie
 import os
@@ -314,10 +314,9 @@ class Ui_MainWindow(object):
         self.mute_btn.setStyleSheet('border-style: solid')
 
         # Adding music status
-        self.status_label = QLabel(self.centralwidget)
-        self.status_label.setGeometry(QRect(10, 531, 590, 70))
-        self.status_label.setStyleSheet('color:white')
-
+        self.status_bar = QStatusBar()
+        self.status_bar.setStyleSheet('color:white')
+        MainWindow.setStatusBar(self.status_bar)
         # adding volume slider
         self.vol_slider = QSlider(Qt.Horizontal, self.frame)
         self.vol_slider.setGeometry(QtCore.QRect(380, 50, 190, 30))
@@ -393,7 +392,7 @@ class Ui_MainWindow(object):
         conver = time.strftime('%M:%S', time.gmtime(dur))
         current_time = self.player.position() / 1000
         converted_time = time.strftime('%M:%S', time.gmtime(current_time))
-        self.status_label.setText(f'{converted_time} /{conver}     {self.listWidget.currentItem().text()} ')
+        self.status_bar.showMessage(f'{converted_time} /{conver}     {self.listWidget.currentItem().text()} ')
 
     def MediaDuration_Changed(self, duration):
         self.slider.setRange(0, duration)
@@ -456,6 +455,7 @@ class Ui_MainWindow(object):
 
     def closewin(self):
         MainWindow.close()
+        sys.exit()
 
     def muteUNMUTE(self):
         if self.player.isMuted():

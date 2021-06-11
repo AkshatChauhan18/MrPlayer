@@ -7,7 +7,7 @@ from PySide2 import QtCore, QtGui, QtWidgets
 import lyricsgenius
 import os.path
 
-path = f"{os.path.expanduser('~')}\\AppData\\Local\\MrPlayer"
+path = f"{os.path.expanduser('~')}\\.MrPlayer\\"
 if os.path.exists(path):
     None
 else:
@@ -176,11 +176,7 @@ class Ui_LyricsWindow(QtWidgets.QMainWindow):
 
         except Exception as e:
             self.textBrowser.setText(
-                f'Something Went Wrong, <a href = file:///{path}/error.log> click here to check the error</a>')
-            
-
-            with open(f"{path}\\error.log", 'w+') as f:
-                f.write(f"{e}\n")
+                f'Something Went Wrong, {e}')
 
     def minimize(self):
         self.showMinimized()
@@ -188,10 +184,10 @@ class Ui_LyricsWindow(QtWidgets.QMainWindow):
     def closewin(self):
         self.close()
 
-    def mousePressEvent(self, event):  # +
+    def mousePressEvent(self, event):  
         self.dragPos = event.globalPos()
 
-    def mouseMoveEvent(self, event):  # !!!
+    def mouseMoveEvent(self, event): 
         if event.buttons() == QtCore.Qt.LeftButton:
             self.move(self.pos() + event.globalPos() - self.dragPos)
             self.dragPos = event.globalPos()
