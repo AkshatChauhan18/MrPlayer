@@ -168,7 +168,7 @@ class Ui_LyricsWindow(QtWidgets.QMainWindow):
 
     def getlyrics(self):
         try:
-            self.api_key = open(f"{path}\\api_key.txt").read()
+            self.api_key = open(f"{path}\\api_key.txt").read()  
             genius = lyricsgenius.Genius(self.api_key)
             self.lyric = genius.search_song(
                 self.songBox.text(), self.artistBox.text())
