@@ -1,5 +1,5 @@
 ###################################################
-# This  is lyrics part of MrPlayer made in 2021   #
+# This is lyrics part of MrPlayer made in 2021    #
 # Copyright (c) Akshat Chauhan                    #
 ###################################################
 
@@ -12,6 +12,26 @@ if os.path.exists(path):
     None
 else:
     os.mkdir(path)
+
+class LyricsThread(QtCore.QThread):
+    lyrics_signal = QtCore.Signal(str)
+    def __init__(self,song:str,artist:str):
+        super(LyricsThread,self).__init__()
+        self.song = song
+        self.artist = artist
+    def run(self):
+        self.lyrics_signal.emit('loadingSHA25690')
+        try:
+            self.api_key = open(f"{path}\\api_key.txt").read()  
+            genius = lyricsgenius.Genius(self.api_key)
+            self.lyric = genius.search_song(
+                self.song, self.artist)
+            self.lyrics_signal.emit(str(self.lyric.lyrics))
+
+        except Exception as e:
+            self.lyrics_signal.emit(f"Something went wrong :\n{e}")
+
+
 
 browser_v_slider = ("""
         QScrollBar:vertical {  
@@ -123,7 +143,11 @@ class Ui_LyricsWindow(QtWidgets.QMainWindow):
         self.textBrowser.setObjectName("textBrowser")
         self.setCentralWidget(self.centralwidget)
         self.textBrowser.openLinks()
-        self.SearchButton.clicked.connect(self.getlyrics)
+        self.loaderUI = QtWidgets.QLabel(self.centralwidget)
+        self.loaderUI.setGeometry(QtCore.QRect(125,170,200,200))
+        self.loaderUI.setHidden(True)
+        
+        self.SearchButton.clicked.connect(self.getLyrics)
         QtCore.QMetaObject.connectSlotsByName(self)
         self.SearchButton.setIcon(QtGui.QIcon('assets/search.png'))
         # adding titlebar
@@ -166,17 +190,11 @@ class Ui_LyricsWindow(QtWidgets.QMainWindow):
         self.textBrowser.verticalScrollBar().setStyleSheet(browser_v_slider)
         self.show()
 
-    def getlyrics(self):
-        try:
-            self.api_key = open(f"{path}\\api_key.txt").read()  
-            genius = lyricsgenius.Genius(self.api_key)
-            self.lyric = genius.search_song(
-                self.songBox.text(), self.artistBox.text())
-            self.textBrowser.setText(str(self.lyric.lyrics))
-
-        except Exception as e:
-            self.textBrowser.setText(
-                f'Something Went Wrong, {e}')
+    def getLyrics(self):
+        new_thread = LyricsThread(self.songBox.text(),self.artistBox.text())
+        new_thread.lyrics_signal.connect(self.update_text_browser)
+        self.worker = new_thread
+        self.worker.start()
 
     def minimize(self):
         self.showMinimized()
@@ -193,10 +211,20 @@ class Ui_LyricsWindow(QtWidgets.QMainWindow):
             self.dragPos = event.globalPos()
             event.accept()
 
+    def update_text_browser(self,text):
+        if text == "loadingSHA25690":
+            self.loaderUI.setHidden(False)
+            self.loading_gif = QtGui.QMovie('assets/loader.gif')
+            self.loading_gif.setScaledSize(QtCore.QSize(200,200))
+            self.loaderUI.setMovie(self.loading_gif)
+            self.loading_gif.start()
+        else:
+            self.loading_gif.stop()
+            self.loaderUI.setHidden(True)
+            self.textBrowser.setText(text)    
 
 if __name__ == "__main__":
     import sys
-
     app = QtWidgets.QApplication(sys.argv)
     lyricsWindow = Ui_LyricsWindow()
     sys.exit(app.exec_())

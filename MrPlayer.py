@@ -1,17 +1,18 @@
 #################################################################
-# This is a open source project made in 2021 by Akshat Chauhan  #
-# copyright (c) Akshat Chauhan                                  #
+# This is an open source project made in 2021 by Akshat Chauhan  #
+# copyright (c) Akshat Chauhan                                   #
 #################################################################
 
 from PySide2 import QtCore, QtGui, QtWidgets, QtMultimedia
 from PySide2.QtWidgets import QLabel, QPushButton, QToolBar, QWidget, QSlider, QSizePolicy, QAction,QStatusBar
-from PySide2.QtCore import Qt, QSize, QRect, QUrl, QPoint
+from PySide2.QtCore import Qt, QSize, QUrl, QPoint
 from PySide2.QtGui import Qt, QFont, QPixmap, QIcon, QMovie
 import os
 import os.path
 import time
 from help import Ui_HelpWindow
 from lyrics import Ui_LyricsWindow
+
 path = f"{os.path.expanduser('~')}\\Music\\MrPlayer-songs"
 if os.path.exists(path):
     None
@@ -358,7 +359,7 @@ class Ui_MainWindow(object):
         self.mute_btn.clicked.connect(self.muteUNMUTE)
         self.titlebar.mouseMoveEvent = self.mouseMoveEvent
         self.titlebar.mousePressEvent = self.mousePressEvent
-        self.lyricsbutton.clicked.connect(self.open_lyrics)
+        self.lyricsbutton.clicked.connect(self.show_lyrics)
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MrPlayer"))
@@ -472,7 +473,8 @@ class Ui_MainWindow(object):
             MainWindow.move(MainWindow.pos() + event.globalPos() - self.dragPos)
             self.dragPos = event.globalPos()
             event.accept()
-    def open_lyrics(self):
+            
+    def show_lyrics(self):
         self.LyricsWindow = Ui_LyricsWindow()
         self.LyricsWindow.show()
 if __name__ == "__main__":
