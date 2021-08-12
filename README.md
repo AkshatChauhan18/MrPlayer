@@ -1,4 +1,4 @@
-# ![img](assets/icon_small.png) MrPlayer
+# ![img](assets/icon.png) MrPlayer
 MrPlayer is a Mp3 Player made in python.
 
 ![img](showcase.png)
