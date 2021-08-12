@@ -2,7 +2,7 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "MrPlayer"
-#define MyAppVersion "2.0.0"
+#define MyAppVersion "2.2.0"
 #define MyAppPublisher "Akshat Chauhan"
 #define MyAppURL "https://AkshatChauhan.github.io/MrPlayer"
 #define MyAppExeName "MrPlayer.exe"
@@ -13,7 +13,7 @@
 [Setup]
 ; NOTE: The value of AppId uniquely identifies this application. Do not use the same AppId value in installers for other applications.
 ; (To generate a new GUID, click Tools | Generate GUID inside the IDE.)
-AppId={{35F6D864-0A35-4C93-8B9D-0BCFB171A4CD}
+AppId={{7E6DDA6C-EAC9-430D-ACC8-BD124DE564AA}
 AppName={#MyAppName}
 AppVersion={#MyAppVersion}
 ;AppVerName={#MyAppName} {#MyAppVersion}
@@ -29,7 +29,7 @@ LicenseFile=D:\Github-Projects\MrPlayer-project\MrPlayer\LICENSE
 ;PrivilegesRequired=lowest
 PrivilegesRequiredOverridesAllowed=dialog
 OutputDir=C:\Users\Admin\Documents
-OutputBaseFilename=MrPlayer-v2.1.0-setup-winx64
+OutputBaseFilename=MrPlayer-v2.2.0-setup-winx64
 SetupIconFile=D:\Github-Projects\MrPlayer-project\MrPlayer\icon.ico
 Compression=lzma
 SolidCompression=yes
