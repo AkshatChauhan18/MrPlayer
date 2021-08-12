@@ -45,7 +45,7 @@ class Ui_HelpWindow(QtWidgets.QMainWindow):
         QtCore.QMetaObject.connectSlotsByName(self)
         self.miniAction.triggered.connect(self.minimize)
         self.closeAction.triggered.connect(self.closewin)
-        self.html=open('help.html','r').read()
+        self.html=open('assets/help.html','r').read()
         self.HelpView.setHtml(self.html)
         self.show()
     def mousePressEvent(self, event):  # +

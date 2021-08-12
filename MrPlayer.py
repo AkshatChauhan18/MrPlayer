@@ -208,7 +208,7 @@ class Ui_MainWindow(object):
         self.titlebar.setMovable(False)
         MainWindow.addToolBar(self.titlebar)
         self.icon = QLabel()
-        self.icon.setPixmap(QPixmap('icon.png').scaled(25, 25))
+        self.icon.setPixmap(QPixmap('assets/icon_small.png'))
         self.texticon = QLabel('MrPlayer')
         self.texticon.setFont(QFont('Arial', 14))
         self.texticon.setStyleSheet('color:gray')

@@ -156,7 +156,7 @@ class Ui_LyricsWindow(QtWidgets.QMainWindow):
         self.titlebar.setMovable(False)
         self.addToolBar(self.titlebar)
         self.icon = QtWidgets.QLabel()
-        self.icon.setPixmap(QtGui.QPixmap('icon.png').scaled(25, 25))
+        self.icon.setPixmap(QtGui.QPixmap('assets/icon_small.png').scaled(25, 25))
         self.texticon = QtWidgets.QLabel('MrPlayer')
         self.texticon.setFont(QtGui.QFont('Arial', 14))
         self.texticon.setStyleSheet('color:gray')
