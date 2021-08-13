@@ -29,7 +29,7 @@ Lyrics fetching time may vary according to your internet speed.
 
 # MrPlayer-CLI
 
-A CLI which build on prompt-toolkit python library.
+A CLI which is build on prompt-toolkit python library.
 
 ![CLI](CLI.png)
 
